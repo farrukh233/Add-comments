@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Comment Add Form -->
+    <form id="comment-form">
+      <div class="name_input">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="text_input">
+        <label for="text">Комментарий:</label>
+        <textarea id="text" name="text" required></textarea>
+      </div>
+      <div class="data_select">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <button class="btn_submit" type="submit">Добавить комментарий</button>
+    </form>
+
+    <!-- List of Comments -->
+    <div id="comments">
+      <!-- Example Comment -->
+      <div class="comment">
+        <div class="comment-header"></div>
+
+        <div class="comment-actions"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
